@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(30, 38%, 92%);
+
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0, 0.3);
+    background-color: hsl(0, 0%, 100%);
+
+    overflow: hidden;
+}
+
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-content {
+    box-sizing: border-box;
+    padding: 40px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card-type {
+    text-align: left;
+    font-family: 'montserrat';
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.card-title {
+    width: 100%;
+    text-align: left;
+    font-family: 'serif';
+    font-size: 3rem;
+    line-height: 1;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.card-description {
+    text-align: left;
+    font-family: 'montserrat';
+    color: hsl(212, 21%, 14%);
+    line-height: 1.5;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.card-prices {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.card-newPrice {
+    font-size: 2.5rem;
+    color: hsl(158, 36%, 37%);
+    font: 'serif';
+    font-weight: 900;
+    margin: 0;
+}
+
+.card-oldPrice {
+    font-size: 1rem;
+    color: hsl(228, 12%, 48%);
+    font: 'serif';
+    margin: 0;
+}
+
+.card-btn {
+    background-color: hsl(158, 36%, 37%);
+    text-transform: none;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'montserrat';
+    font-weight: 600;
+    font-size: 1.225rem;
+    border-radius: 10px;
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+    transition: .4s;
+}
+
+.card-btn:hover {
+    background-color: hsl(158, 36%, 32%);
+}
+
+@media (max-width: 600px) {
+    .card {
+        grid-template-columns: 1fr;
+
+    }
+
+    .card-img img {
+        max-height: 400px;
+    }
+
+    .card-content {
+        padding: 30px;
+        gap: 30px;
+    }
+}
